@@ -1,0 +1,142 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .skill-item {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #212121;
+        display: grid;
+        padding: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr;
+        // grid-template-areas: 
+        //     ".fa-android h3"
+        //     ".fa-android p"
+        //     ".fa-android button";  
+        .fa-cubes, .fa-code {
+        font-size: 50px;
+        margin: 7px 0;
+        }    
+        .ion-android-phone-portrait{
+            font-size: 70px;
+            line-height: 0;
+            text-align: center;
+        }         
+    }
+    .fa-cubes {
+        color: $secondary-color;
+    }
+    .fa-code {
+        color: $primary-color;
+    }
+
+    
+    h3 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        font-size: 25px;
+        margin: 0;
+    }
+    p {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}
+
+.coding-languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    .code-logo{
+        text-align: center;
+    }
+    img, i {
+        font-size: 100px;
+        height: 100px;
+        opacity: 0.5;
+        filter: grayscale(90%);  
+        transition: 0.3s;      
+    }
+    img:hover, i:hover {
+        filter: none;
+        transition: 0.3s;
+        opacity: 1;
+    }
+}
+
+@media (max-width:960px) {
+    .skills-container {
+        .skill-item {
+            padding: 25px;
+        }
+        h3 {
+            font-size: 18px;
+            margin: auto 0;
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .skills-container {
+        grid-gap: 25px;
+        width: 75%;
+        grid-template-columns: 100%;
+        .skill-item {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            .fa-code, .fa-cubes, .ion-android-phone-portrait {
+                grid-column-start: 2;
+            }
+            h3 {
+                grid-column-start: 3;
+            }
+        }
+    }
+
+    .coding-languages {
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .coding-languages {
+        grid-template-columns: 1fr 1fr ;
+        .code-logo {
+            margin: 25px;
+        }
+    }
+    .skills-container {
+        .skill-item{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;            
+        }            
+        h3{
+            margin: 15px;
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .skills-container {
+        .skill-item {
+             .fa-cubes, .fa-code {
+                grid-column-start: 1;
+                font-size: 40px;
+                margin: 15px 0;
+            }
+            .ion-android-phone-portrait {
+                grid-column-start: 1;
+                font-size: 50px;
+                margin: 15px 10px;
+            }   
+            h3 {
+                grid-column-start: 2;
+                font-size: 18px;
+                height: 100%;
+            }
+            p, button{
+                grid-column-start: 1;
+
+            }
+        }
+    }
+}

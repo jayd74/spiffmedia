@@ -1,0 +1,53 @@
+.about-me{
+    display: flex;
+    .profile-pic {
+        img {
+            width: 70%;
+            border: 3px solid white;
+        }
+        figcaption {
+            font-size: 10px;
+        }
+    }
+    .bio {
+        padding: 0 25px;
+        p {
+            line-height: 30px;
+        }
+        h4 {
+            margin: 25px 0;
+        }
+        
+    }
+}
+
+@media (max-width:960px) {
+    .about-me {
+        width: 90%;
+        .bio h4 {
+            margin:0 0 25px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .about-me {
+        flex-direction: column;
+        .profile-pic {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .bio h4 {
+            margin: 25px 0;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .about-me {
+        grid-template-columns: 1fr;
+    }
+}
+
+

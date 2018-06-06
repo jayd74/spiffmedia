@@ -1,0 +1,64 @@
+.contact {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    padding: 50px 0;
+    position: relative;
+    .contact-bg{
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+    }
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        z-index: 2;
+    }
+    a {
+        transition: 0.3s;        
+        position: relative;
+    }
+    a:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    p {
+        font-size: 20px;
+    }
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+        margin: 0 auto;
+        font-size: 30px;
+        li {
+            width: 30px;
+        }
+        img {
+            height: 30px;
+        }
+        .svg-inline--fa{
+            height: 25px;
+        }
+ 
+    } 
+
+}
+
+@media (max-width:540px) {
+        .contact h2 {
+            font-size: 40px;
+        }
+    .social-media {
+        li {
+            margin: 0 20px ;
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .contact {
+        h2 {
+            font-size: 30px;
+        }
+    }
+}

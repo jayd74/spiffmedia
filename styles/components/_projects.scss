@@ -1,0 +1,150 @@
+
+.projects-section{
+    background: url('../images/pattern-dots-vertical.png')no-repeat;
+}
+.projects {
+    position: relative;
+    h4 {
+            text-align: center;
+        }
+    .projects-container {
+        margin: 50px 0;
+        .project-item {
+            width: 100%;
+            display: flex;
+            margin: 100px 0; 
+        }
+        .project-img {
+            padding: 25px 0;
+            text-align: center;
+            width: 100%;
+            img {
+                width: 100%;
+                // margin: 30px;            
+            }
+        }
+                a {
+                padding: 10px 20px;
+                border: 2px solid white;
+                background:$bg-color;
+                }
+        .project-info {
+            margin: 0 25px;
+            padding: 25px;
+            width: 100%;
+            p {
+                line-height: 27px;
+            }
+        }
+        h3 {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+        
+        .project-alt {
+            flex-direction: row-reverse;
+        }
+        ul{
+            margin: 0 auto 20px;
+        }
+        .project-code li{
+            display: inline;
+            font-size: 14px;
+            // padding: 0 20px;
+            text-transform: uppercase;
+        }
+        .project-code li::after {
+            content: ' • ';
+            padding: 5px;        
+        }
+        .project-code li:last-child::after {
+            content: "";
+        }
+        a {
+            border: 1px solid white;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-right: 5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        a:hover{
+            background:white;
+            transition: 0.3s;
+            color: black;
+        }
+    }
+    #squiggle {
+        top: 20px;
+        right: 150px;
+    }
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    h3 {
+        font-size:48px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .stat1{
+        color: #2246e8;
+    }
+    .stat2{
+        color: $third-color;
+    }
+    .stat3{
+        color: $primary-color;
+    }
+    .stat4{
+        color: $secondary-color;
+    }
+}
+@media (max-width:960px) {
+    .projects-container{
+        .project-item{
+            flex-direction: column;
+            .project-img {
+                width: 75%;
+                margin: 0 auto;
+                text-align: center;
+                img {
+                    margin: 0;
+                }
+            }
+            .project-info {
+                text-align: center;
+                margin: 0;
+                p {
+                    width: 75%;
+                    margin: 35px auto;
+                    text-align: left;
+                }
+            }
+        }  
+    }
+    .projects .projects-container .project-alt {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 540px) {
+    .projects .projects-container .project-img img {
+        margin: 0;
+    }
+    .projects .projects-container .project-info {
+            margin: 0px;
+        }
+    .stats {
+            grid-template-columns: 1fr 1fr;
+        }   
+    }
+
+    @media (max-width:360px) {
+        .stats {
+            font-size: 36px;
+        }
+    }

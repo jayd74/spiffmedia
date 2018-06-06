@@ -1,0 +1,107 @@
+.bg-shapes{
+    position: absolute;
+}
+    
+.main-banner {
+    // background: url('../images/hello-bg.png') no-repeat left;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    margin: 0;
+    .shapes-bg {
+        background: url('../images/dotted-half-circle.png') no-repeat right bottom;
+        position: relative;
+        padding: 50px 0;
+        // img {
+        //     margin-top: 100px;
+        // }
+        h2{
+            position: relative;
+            bottom: 150px;
+            left: -70px;
+            font-size: 30px;
+            color: lightgray;
+        }
+        #square {
+            top: 50px;
+            left: 150px;
+        }
+        #circle {
+            bottom: 0px;
+            right: 300px;
+        }
+        #squiggle-blue {
+            top: 0px;
+            right: 600px;
+        }
+        #squiggle-green{
+            left: 100px;
+            top: 200px;
+        }
+        #triangle {
+            top: 50px;
+            right: 200px;
+        }
+        #diamond {
+            bottom: 10px;
+            left: 250px;
+        }
+    }
+    blockquote {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    button {
+        background: none;
+        padding: 10px 50px;
+        margin: 30px;
+    }
+}
+
+
+@media (max-width:1020px) {
+    .main-banner .shapes-bg h2 {
+        font-size: 20px;
+        bottom: 120px;
+        left: -50px;
+    }
+}
+
+@media (max-width:720px) {
+    .main-banner .shapes-bg h2{
+        font-size: 25px;
+        bottom: 75px;
+        left: 0;
+    }
+    // .shapes-bg {
+    //     display: none;
+    // }
+}
+
+@media (max-width: 540px) {
+    .main-banner .shapes-bg h2 {
+        font-size: 20px;
+    }
+    // #square,
+    #circle,
+       
+        #triangle,
+        {
+            visibility: hidden;
+        }
+}
+
+@media (max-width:414px) {
+    .main-banner .shapes-bg h2 {
+        font-size: 18px;
+        bottom: 65px;
+        left: 0px;
+    }
+}
+
+@media (max-width:360px) {
+    .main-banner .shapes-bg h2 {
+        bottom: 30px;
+    }
+}
